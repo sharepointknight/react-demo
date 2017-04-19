@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 90);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -75,22 +75,62 @@ module.exports = React;
 
 /***/ }),
 
-/***/ 1:
+/***/ 24:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var HelloWorld = (function (_super) {
+    __extends(HelloWorld, _super);
+    function HelloWorld() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    HelloWorld.prototype.render = function () {
+        var name = "World";
+        if (this.props.Name)
+            name = this.props.Name;
+        return React.createElement("h1", null,
+            "Hello ",
+            name);
+    };
+    return HelloWorld;
+}(React.Component));
+exports.default = HelloWorld;
+
+
+/***/ }),
+
+/***/ 5:
 /***/ (function(module, exports) {
 
 module.exports = ReactDOM;
 
 /***/ }),
 
-/***/ 10:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var ReactDOM = __webpack_require__(1);
-var element = React.createElement("h1", null, "Hello, world");
+var ReactDOM = __webpack_require__(5);
+var HelloWorld_1 = __webpack_require__(24);
+var element = React.createElement("div", null,
+    React.createElement(HelloWorld_1.default, { Name: "SharePoint Fest DC" }),
+    React.createElement(HelloWorld_1.default, { Name: "Cool People that are learning about React" }));
 ReactDOM.render(element, document.getElementById('main'));
 
 
