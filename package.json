@@ -1,0 +1,31 @@
+{
+  "name": "react-bands",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Schouten",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.12",
+    "@types/react-dom": "^0.14.23",
+    "office-ui-fabric-react": "^2.15.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sp-pnp-js": "^2.0.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.0.7",
+    "gulp": "^3.9.1",
+    "gulp-sharepoint-sync": "github:fabian-schmidt/gulp-sharepoint-sync",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "source-map-loader": "^0.1.6",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
