@@ -68,16 +68,16 @@ export default class NewBand extends React.Component<NewBandProps,NewBandState>
             </select><br />
             <textarea rows={2} cols={10} onChange={this.onDescriptionChange.bind(this)} value={this.state.description} ></textarea>
             <br />
-            { //<button type="button" onClick={this.submit.bind(this)}>Add</button>
+            { <button type="button" onClick={this.submit.bind(this)}>Add</button>
             }
-                            
+                    { /*       
                             
                     <DefaultButton
                     icon='Add'
                     text='Add Band' type="button" href="javascript:void(0)"
                     onClick={this.submit.bind(this)}
                 />
-            
+            */}
         </div>);
     }
 }
