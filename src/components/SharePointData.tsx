@@ -16,9 +16,10 @@ export default class SharePointData extends React.Component<undefined,SharePoint
     }
     loadBands()
     {
-        SharePointService.GetListItems("Bands").then(function (data:any){
+        SharePointService.GetListItems("Bands").then((data:any) =>
+        {
             this.setState({Bands: data});
-        }.bind(this));
+        });
     }
     componentWillMount()
     {

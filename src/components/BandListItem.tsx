@@ -1,7 +1,7 @@
 import * as React from "react";
-import Band from "../model/Band"
+import Band from "../model/Band";
 
-export interface BandListItemProps { Band:Band, onClick:any };
+export interface BandListItemProps { Band:Band, onClick: any };
 
 export default class BandListItem extends React.Component<BandListItemProps,any>
 {

@@ -49,6 +49,6 @@ gulp.task("deploy", ["webpack:build-dev"], function () {
         'dist/**'
     ]; 
     gulp.src( globs1, { base: 'dist', buffer: false } )
-        .pipe( conn.differentSize( '/Demo/react-bands' ) ) // only upload newer files
-        .pipe( conn.dest( '/Demo/react-bands' ) );
+        .pipe( conn.differentSize( '/Demo/react-bands1' ) ) // only upload newer files
+        .pipe( conn.dest( '/Demo/react-bands1' ) );
 });
