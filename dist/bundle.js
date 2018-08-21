@@ -101,7 +101,7 @@ var HelloWorld = (function (_super) {
         var name = "World";
         if (this.props.Name)
             name = this.props.Name;
-        return React.createElement("h1", null,
+        return React.createElement("h2", null,
             "Hello ",
             name,
             "!");
@@ -129,12 +129,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var reactDom = __webpack_require__(5);
 var HelloWorld_1 = __webpack_require__(24);
-var element = React.createElement("div", null,
-    React.createElement(HelloWorld_1.default, { Name: "World" }),
-    React.createElement(HelloWorld_1.default, { Name: "Chicago" }),
-    React.createElement(HelloWorld_1.default, { Name: "is" }),
-    React.createElement(HelloWorld_1.default, { Name: "cool!" }));
-reactDom.render(element, document.getElementById("main"));
+var elem = React.createElement("span", null,
+    React.createElement(HelloWorld_1.default, { Name: "DC" }),
+    React.createElement(HelloWorld_1.default, { Name: "You guys are cool" }));
+reactDom.render(elem, document.getElementById("main"));
 
 
 /***/ })

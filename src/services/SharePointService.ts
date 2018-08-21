@@ -4,7 +4,7 @@ export default class SharePointService
 {
     static GetListItems(listTitle:string):any
     {
-        return pnp.sp.web.lists.getByTitle(listTitle).items.get();
+        return pnp.sp.web.lists.getByTitle(listTitle).items.orderBy("Title").get();
     }
     static AddListItem(listTitle:string, item:any):any
     {

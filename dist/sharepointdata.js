@@ -2162,7 +2162,7 @@ var SharePointService = (function () {
     function SharePointService() {
     }
     SharePointService.GetListItems = function (listTitle) {
-        return sp_pnp_js_1.default.sp.web.lists.getByTitle(listTitle).items.get();
+        return sp_pnp_js_1.default.sp.web.lists.getByTitle(listTitle).items.orderBy("Title").get();
     };
     SharePointService.AddListItem = function (listTitle, item) {
         return sp_pnp_js_1.default.sp.web.lists.getByTitle(listTitle).items.add(item);
@@ -6804,7 +6804,7 @@ var BandListItem = (function (_super) {
     return BandListItem;
 }(React.Component));
 exports.default = BandListItem;
-//<i className="ms-Icon ms-Icon--MusicNote"></i> 
+//<i className="ms-Icon ms-Icon--MusicNote"></i>  
 
 
 /***/ }),

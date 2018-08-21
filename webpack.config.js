@@ -1,5 +1,7 @@
 'use strict';
 
+var Visualizer = require('webpack-visualizer-plugin');
+
 module.exports = {
     entry: {
         sharepointdata:'./src/main.tsx',
@@ -24,5 +26,6 @@ module.exports = {
         'react': 'React',
         'react-dom': 'ReactDOM',
         'sp-pnp-js': '$pnp'
-    }
+    },
+    plugins: [new Visualizer()],
 };
