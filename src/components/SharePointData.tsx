@@ -21,7 +21,7 @@ export default class SharePointData extends React.Component<undefined,SharePoint
             this.setState({Bands: data});
         });
     }
-    componentWillMount()
+    componentDidMount()
     {
         this.loadBands();
     }

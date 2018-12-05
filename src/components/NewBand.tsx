@@ -70,13 +70,13 @@ export default class NewBand extends React.Component<NewBandProps,NewBandState>
             <br />
             { // <button type="button" onClick={this.submit.bind(this)}>Add</button>
             }
-              {    
+               {    
                     <DefaultButton
                     icon='Add'
                     text='Add Band' type="button" href="javascript:void(0)"
                     onClick={this.submit.bind(this)}
                 />
-              }
+               } 
         </div>);
     }
 }
